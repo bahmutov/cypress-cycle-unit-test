@@ -4,8 +4,7 @@ import { div, label, input, hr, h1 } from '@cycle/dom'
 import { mount } from '../..'
 
 function main (sources) {
-  const vdom$ = sources.DOM
-    .select('.myinput')
+  const vdom$ = sources.DOM.select('.myinput')
     .events('input')
     .map(ev => ev.target.value)
     .startWith('')
@@ -22,6 +21,7 @@ function main (sources) {
   }
 }
 
+/* eslint-env mocha */
 describe('Hello World', () => {
   beforeEach(() => {
     mount(main)

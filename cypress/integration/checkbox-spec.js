@@ -1,12 +1,11 @@
 // @ts-check
 /// <reference types="Cypress" />
 
-import { div, label, input, p } from '@cycle/dom'
+import { div, input, p } from '@cycle/dom'
 import { mount } from '../..'
 
 function main (sources) {
-  const vdom$ = sources.DOM
-    .select('input')
+  const vdom$ = sources.DOM.select('input')
     .events('change')
     .map(ev => ev.target.checked)
     .startWith(false)
@@ -23,6 +22,7 @@ function main (sources) {
   }
 }
 
+/* eslint-env mocha */
 describe('Checkbox', () => {
   beforeEach(() => {
     mount(main)
