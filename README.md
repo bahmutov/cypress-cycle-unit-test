@@ -36,8 +36,9 @@ it('works', () => {
 
 ## Examples
 
-- [Hello world](cypress/integration/hello-spec.js)
+- [Hello World](cypress/integration/hello-spec.js)
 - [checkbox](cypress/integration/checkbox-spec.js)
+- [counter](cypress/integration/counter-spec.js)
 
 ## Related projects
 
