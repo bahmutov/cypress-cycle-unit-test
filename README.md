@@ -34,11 +34,23 @@ it('works', () => {
 })
 ```
 
+You can pass additional drivers (or even your own DOM driver)
+
+```js
+import { makeHTTPDriver } from '@cycle/http';
+beforeEach(() => {
+  mount(main, {
+    HTTP: makeHTTPDriver()
+  })
+})
+```
+
 ## Examples
 
 - [Hello World](cypress/integration/hello-spec.js)
 - [checkbox](cypress/integration/checkbox-spec.js)
 - [counter](cypress/integration/counter-spec.js)
+- [http-random-user](cypress/integration/http-random-user-spec.ts) shows TypeScript spec, HTTP spying and stubbing
 
 ## Related projects
 
