@@ -71,6 +71,7 @@
     "analyzeCommits": "simple-commit-message"
   },
   "devDependencies": {
+    "@bahmutov/add-typescript-to-cypress": "2.0.0",
     "ban-sensitive-files": "1.9.2",
     "cypress": "1.4.2",
     "dependency-check": "3.0.0",
