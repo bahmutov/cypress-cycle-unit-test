@@ -1,7 +1,7 @@
 {
   "name": "cypress-cycle-unit-test",
   "description": "Unit testing Cycle.js components in Cypress E2E test runner",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": "https://github.com/bahmutov/cypress-cycle-unit-test/issues",
   "config": {
@@ -63,7 +63,9 @@
     "test": "npm run cy:run",
     "unused-deps": "dependency-check --unused --no-dev .",
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "release": {
     "analyzeCommits": "simple-commit-message"
@@ -78,7 +80,9 @@
     "nsp": "3.1.0",
     "pre-git": "3.17.0",
     "prettier-standard": "8.0.0",
-    "standard": "10.0.3"
+    "standard": "10.0.3",
+    "travis-deploy-once": "^4.3.4",
+    "semantic-release": "^12.4.1"
   },
   "dependencies": {
     "@cycle/dom": "20.1.0",
