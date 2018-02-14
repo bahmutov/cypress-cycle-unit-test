@@ -8,15 +8,44 @@
 [![semantic-release][semantic-image] ][semantic-url]
 [![js-standard-style][standard-image]][standard-url]
 
+![Cycle component in Cypress](images/cycle_cypress.gif)
+
 ## Install
 
 Requires [Node](https://nodejs.org/en/) version 6 or above.
 
 ```sh
-npm install --save cypress-cycle-unit-test
+npm install --save-dev cypress cypress-cycle-unit-test
 ```
 
 ## Use
+
+Mount your component's view function before each test.
+
+```js
+import {mount} from 'cypress-cycle-unit-test'
+import {main} from './src/component'
+beforeEach(() => {
+  mount(main)
+})
+it('works', () => {
+  // use full Cypress API to interact
+  // and test the component
+})
+```
+
+## Examples
+
+- [Hello world](cypress/integration/hello-spec.js)
+
+## Related projects
+
+There are similar adapters for other frameworks
+
+- [cypress-vue-unit-test](https://github.com/bahmutov/cypress-vue-unit-test)
+- [cypress-react-unit-test](https://github.com/bahmutov/cypress-react-unit-test)
+- [cypress-hyperapp-unit-test](https://github.com/bahmutov/cypress-hyperapp-unit-test)
+- [cypress-svelte-unit-test](https://github.com/bahmutov/cypress-svelte-unit-test)
 
 ### Small print
 
