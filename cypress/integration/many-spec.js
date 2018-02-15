@@ -54,9 +54,16 @@ describe('example "many"', () => {
 
     it('can add and remove items', () => {
       cy.get('.item').should('have.length', 1)
-      cy.get('.add-one-btn').click().click()
+      cy
+        .get('.add-one-btn')
+        .click()
+        .click()
       cy.get('.item').should('have.length', 3)
-      cy.get('.item').first().contains('Remove').click()
+      cy
+        .get('.item')
+        .first()
+        .contains('Remove')
+        .click()
       cy.get('.item').should('have.length', 2)
     })
 
