@@ -51,6 +51,7 @@ beforeEach(() => {
 - [checkbox](cypress/integration/checkbox-spec.js)
 - [counter](cypress/integration/counter-spec.js)
 - [http-random-user](cypress/integration/http-random-user-spec.ts) shows TypeScript spec, HTTP spying and stubbing
+- [many-spec.js](cypress/integration/many-spec.js) tests several components with props from [examples/many](examples/many) application
 
 ## Related projects
 
