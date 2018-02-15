@@ -53,6 +53,8 @@ beforeEach(() => {
 - [http-random-user](cypress/integration/http-random-user-spec.ts) shows TypeScript spec, HTTP spying and stubbing
 - [many-spec.js](cypress/integration/many-spec.js) tests several components with props from [examples/many](examples/many) application
 
+The source for the examples was taken from [https://github.com/cyclejs/cyclejs/tree/master/examples](https://github.com/cyclejs/cyclejs/tree/master/examples)
+
 ## Related projects
 
 There are similar adapters for other frameworks

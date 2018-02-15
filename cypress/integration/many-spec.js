@@ -28,7 +28,10 @@ describe('example "many"', () => {
     it('can change width by controlling the range slider', () => {
       // look at the source code to see which event is registered
       // in this case it was "input"
-      cy.get('.width-slider').invoke('val', 300).trigger('input')
+      cy
+        .get('.width-slider')
+        .invoke('val', 300)
+        .trigger('input')
       cy.get('.item').should('have.css', 'width', '300px')
     })
 
@@ -52,9 +55,16 @@ describe('example "many"', () => {
 
     it('can add and remove items', () => {
       cy.get('.item').should('have.length', 1)
-      cy.get('.add-one-btn').click().click()
+      cy
+        .get('.add-one-btn')
+        .click()
+        .click()
       cy.get('.item').should('have.length', 3)
-      cy.get('.item').first().contains('Remove').click()
+      cy
+        .get('.item')
+        .first()
+        .contains('Remove')
+        .click()
       cy.get('.item').should('have.length', 2)
     })
 
