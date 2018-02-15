@@ -1,3 +1,5 @@
+// search example taken from
+// https://github.com/cyclejs/cyclejs/tree/master/examples/advanced/autocomplete-search
 import xs from 'xstream'
 import debounce from 'xstream/extra/debounce'
 import dropUntil from 'xstream/extra/dropUntil'
@@ -297,7 +299,10 @@ const networking = {
   },
 
   generateRequests (searchQuery$) {
-    return searchQuery$.map(q => BASE_URL + encodeURI(q))
+    return searchQuery$.map(q => {
+      debugger
+      return BASE_URL + encodeURI(q)
+    })
   }
 }
 

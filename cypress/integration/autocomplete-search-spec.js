@@ -5,6 +5,7 @@ import AutocompleteSearch from '../../examples/autocomplete-search/app'
 import { makeJSONPDriver } from '@cycle/jsonp'
 import { timeDriver } from '@cycle/time'
 import { mount } from '../..'
+import jsonp from 'jsonp'
 
 /* eslint-env mocha */
 describe('autocomplete-search', () => {
@@ -28,11 +29,15 @@ describe('autocomplete-search', () => {
       preventDefault: preventDefaultSinkDriver,
       Time: timeDriver
     }
+    // hmm, why is jsonp undefined in the test?
+    cy.window().then(win => {
+      win.jsonp = jsonp
+    })
     mount(AutocompleteSearch, drivers)
   })
 
   it('shows search form', () => {
-    cy.get('.autocompleteable').should('be.visible')
+    cy.get('.autocompleteable').should('be.visible') // .type('foo')
     cy.contains('Some field:')
   })
 })
