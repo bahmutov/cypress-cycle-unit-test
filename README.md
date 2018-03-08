@@ -1,5 +1,7 @@
 # cypress-cycle-unit-test
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bahmutov/cypress-cycle-unit-test.svg)](https://greenkeeper.io/)
+
 > Unit testing Cycle.js components in Cypress E2E test runner
 
 [![NPM][npm-icon] ][npm-url]
