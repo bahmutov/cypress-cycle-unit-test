@@ -61,10 +61,13 @@ The source for the examples was taken from [https://github.com/cyclejs/cyclejs/t
 
 There are similar adapters for other frameworks
 
-- [cypress-vue-unit-test](https://github.com/bahmutov/cypress-vue-unit-test)
-- [cypress-react-unit-test](https://github.com/bahmutov/cypress-react-unit-test)
-- [cypress-hyperapp-unit-test](https://github.com/bahmutov/cypress-hyperapp-unit-test)
-- [cypress-svelte-unit-test](https://github.com/bahmutov/cypress-svelte-unit-test)
+* [cypress-vue-unit-test](https://github.com/bahmutov/cypress-vue-unit-test)
+* [cypress-react-unit-test](https://github.com/bahmutov/cypress-react-unit-test)
+* [cypress-cycle-unit-test](https://github.com/bahmutov/cypress-cycle-unit-test)
+* [cypress-svelte-unit-test](https://github.com/bahmutov/cypress-svelte-unit-test)
+* [cypress-angular-unit-test](https://github.com/bahmutov/cypress-angular-unit-test)
+* [cypress-hyperapp-unit-test](https://github.com/bahmutov/cypress-hyperapp-unit-test)
+* [cypress-angularjs-unit-test](https://github.com/bahmutov/cypress-angularjs-unit-test)
 
 ### Small print
 
