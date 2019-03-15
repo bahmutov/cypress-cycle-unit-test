@@ -74,7 +74,7 @@ describe('Http random user', () => {
     cy.server()
     cy.route('/users/*').as('xhr')
     cy.get('.get-random').click()
-    cy.wait('@xhr')
+    cy.get('@xhr')
     cy.get('.user-details').should('be.visible')
   })
 
