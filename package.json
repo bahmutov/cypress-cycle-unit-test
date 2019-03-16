@@ -94,7 +94,7 @@
   },
   "dependencies": {
     "@cycle/dom": "20.4.0",
-    "@cycle/run": "4.1.0"
+    "@cycle/run": "4.4.0"
   },
   "standard": {
     "globals": [
