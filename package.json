@@ -71,7 +71,7 @@
     "analyzeCommits": "simple-commit-message"
   },
   "devDependencies": {
-    "@bahmutov/add-typescript-to-cypress": "2.0.0",
+    "@bahmutov/add-typescript-to-cypress": "2.1.2",
     "@cycle/http": "14.10.0",
     "@cycle/isolate": "3.4.0",
     "@cycle/jsonp": "7.1.0",
