@@ -73,7 +73,7 @@
   "devDependencies": {
     "@bahmutov/add-typescript-to-cypress": "2.0.0",
     "@cycle/http": "14.10.0",
-    "@cycle/isolate": "3.4.0",
+    "@cycle/isolate": "5.2.0",
     "@cycle/jsonp": "7.1.0",
     "@cycle/time": "0.19.0",
     "ban-sensitive-files": "1.9.2",
