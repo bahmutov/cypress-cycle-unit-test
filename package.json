@@ -93,7 +93,7 @@
     "xstream": "11.11.0"
   },
   "dependencies": {
-    "@cycle/dom": "20.4.0",
+    "@cycle/dom": "22.8.0",
     "@cycle/run": "4.4.0"
   },
   "standard": {
