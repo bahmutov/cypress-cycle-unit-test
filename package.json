@@ -90,7 +90,7 @@
     "simple-commit-message": "4.0.3",
     "standard": "10.0.3",
     "travis-deploy-once": "4.4.1",
-    "xstream": "11.11.0"
+    "xstream": "11.14.0"
   },
   "dependencies": {
     "@cycle/dom": "20.4.0",
